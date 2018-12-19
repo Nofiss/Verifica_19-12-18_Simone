@@ -9,7 +9,7 @@ import {
     NavLink
 } from 'reactstrap';
 
-export default class Example extends Component {
+export default class Example extends Component {       //classe del menu
     constructor(props) {
         super(props);
 
@@ -18,7 +18,7 @@ export default class Example extends Component {
             isOpen: false
         };
     }
-    toggle() {
+    toggle() {  //funzione che ti permette di aprire la tendina nel menu quando lo schermo è piccolo 
         this.setState({
             isOpen: !this.state.isOpen
         });
@@ -26,16 +26,16 @@ export default class Example extends Component {
     render() {
         return (
             <div>
-                <Navbar color="dark" dark expand="md">
-                    <NavbarBrand href="/">Home</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
+                <Navbar color="dark" dark expand="md">   {/*assegno il colore al menu*/}
+                    <NavbarBrand href="/">Home</NavbarBrand>  {/*logo del menu*/}
+                    <NavbarToggler onClick={this.toggle} /> 
+                    <Collapse isOpen={this.state.isOpen} navbar> {/*se llo schermo è piccolo, il menu diventa a tendina*/}
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="#">About</NavLink>
+                                <NavLink href="#">About</NavLink>  {/*link del menu*/}
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#">Contact</NavLink>
+                                <NavLink href="#">Contact</NavLink>  {/*link del menu*/}
                             </NavItem>
                         </Nav>
                     </Collapse>
