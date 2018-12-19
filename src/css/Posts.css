@@ -1,0 +1,40 @@
+.posts {
+    border: 2px solid #000;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 20% 5% 20%;
+    background-color: #FFF;
+}
+
+.user {
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: flex-start;
+    margin: 2% 0 0 2%;
+}
+
+.thumbnail {
+    width: 20%;
+    height: 20%;
+}
+
+.albumID {
+    width: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 5%;
+    display: flex;
+    align-self: flex-end;
+}
+
+.title {
+    font-size: 30px;
+    margin: 2%;
+}
+
+.url {
+    width: 40%;
+    height: 40%;
+}
