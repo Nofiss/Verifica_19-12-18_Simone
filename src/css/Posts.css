@@ -38,3 +38,13 @@
     width: 40%;
     height: 40%;
 }
+
+@media (max-width: 785px) {
+    .albumID {
+        font-size: 15px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}

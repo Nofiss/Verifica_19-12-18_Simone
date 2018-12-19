@@ -2,10 +2,19 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 1% 4% 1% 4%;
+    padding: 1% 2% 1% 2%;
     background-color: #212529;
     color: #FFF;
 }
+
+.link {
+   color: #FFF; 
+}
+
+.link:hover {
+    text-decoration: none;
+    color: rgb(231, 18, 18); 
+ }
 
 .footer-container {
     display: flex;
